@@ -4,4 +4,4 @@ organized by related lecture (& perhaps non-lecture topic later&mdash;e.g. when 
 
 ## toc
 
-- [lecture 0, intro](/lec_0-intro.md)
+- [lecture 0, intro](./lec_0-intro.md)
