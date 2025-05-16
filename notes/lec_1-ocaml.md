@@ -16,7 +16,7 @@ some basic expressions/values:
 "Hello " ^ "World";; (* => : string = "Hello World" *)
 
 (* unit value *)
-();; (* => - : unit = ())
+();; (* => - : unit = () *)
 ```
 
 exceptions can be thrown (or "raised"), custom exceptions can be created, & exception handling is done w/ `try ... with ...`:
@@ -168,7 +168,7 @@ algebraic data types:
 ```ocaml
 (* some redefinitions of option & list as examples *)
 type 'a my_opt = None | Some of 'a
-Some (1);; (* => - : int my_opt = Some (1))
+Some (1);; (* => - : int my_opt = Some (1) *)
 type 'a my_list = Nil | Cons of 'a * 'a my_list
 Cons (1, Nil);; (* => - : int my_list = Cons(1, Nil) *)
 
