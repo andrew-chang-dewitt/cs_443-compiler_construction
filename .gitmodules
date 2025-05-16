@@ -1,0 +1,3 @@
+[submodule "prj_0"]
+	path = prj_0
+	url = git@github.com:andrew-chang-dewitt/cs_443-prj_0.git
