@@ -4,6 +4,6 @@ organized by related lecture (& perhaps non-lecture topic later&mdash;e.g. when 
 
 ## toc
 
-- [lecture 0, intro](./lec_0-intro.md)
-- [lecture 1, ocaml crash course](./lec_1-ocaml.md)
-- [lecture 2, lexical analysis, regular expression, & finite automata](./lec_2-regex_finite_automata.md)
+- [lecture 0, intro](./lec_00-intro.md)
+- [lecture 1, ocaml crash course](./lec_01-ocaml.md)
+- [lecture 2, lexical analysis, regular expression, & finite automata](./lec_02-regex_finite_automata.md)
