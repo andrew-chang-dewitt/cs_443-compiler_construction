@@ -9,3 +9,5 @@ repos (as submodules) & may later include other materials as needed.
 - [notes](/notes/)
 - assignments
   - [project 0](/prj_0/)
+  - [project 1](/prj_1/)
+  - [project 5](/prj_5/)
