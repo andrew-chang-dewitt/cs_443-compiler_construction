@@ -10,5 +10,5 @@ organized by related lecture (& perhaps non-lecture topic later&mdash;e.g. when 
 - [lecture 3, parsing (ll(k) grammars)](./lec_03-ll_parsing.md)
 - [lecture 4, lr(k) parsing](./lec_04-lr_parsing.md)
 - [lecture 13, liveness analysis](./lec_13-liveness_analysis.md)
-- TODO: dataflow analysis <!-- [lecture 14, dataflow analysis](./lec_14-dataflow_analysis.md) --!>
+- [lecture 14, dataflow analysis](./lec_14-dataflow_analysis.md)
 - [optimizations (lectures 15, 16, & 17)](./lec_15_16_17-optimizations.md)
