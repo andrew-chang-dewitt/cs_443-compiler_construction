@@ -13,8 +13,6 @@ meta:
   published: "2025-05-29T00:00-06:00"
 ---
 
-# intro
-
 what is a compiler?
 
 given a source code as text, a compiler generates machine code which can be
