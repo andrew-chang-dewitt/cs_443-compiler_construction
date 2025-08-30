@@ -1,4 +1,20 @@
-# lexing, finite state machines, & regex
+---
+title: "CS 443 lecture notes: lexing, finite state machines, & regex"
+description: "intro to lexing, finite state machines, & regex."
+keywords:
+  - "notes"
+  - "compiler construction"
+  - "lexing"
+  - "finite state machines"
+  - "regex"
+  - "lecture notes"
+  - "computer science"
+  - "cs 443"
+  - "illinois tech"
+meta:
+  byline: Andrew Chang-DeWitt
+  published: "2025-06-03T00:00-06:00"
+---
 
 remember the compiler structure:
 
