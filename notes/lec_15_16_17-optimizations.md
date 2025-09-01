@@ -1,4 +1,18 @@
-# optimizations
+---
+title: "Compilers notes: optimizations"
+description: "Intruductory lecture notes."
+keywords:
+  - "optimizations"
+  - "compiler construction"
+  - "pl theory"
+  - "lecture notes"
+  - "computer science"
+  - "cs 443"
+  - "illinois tech"
+meta:
+  byline: Andrew Chang-DeWitt
+  published: "2025-07-09T00:00-06:00"
+---
 
 a summary of content from lectures 15, 16, & 17 on loop optimization, static
 single assignment, & function body optimizations.
@@ -61,8 +75,8 @@ _strongly connected_ subsets of graphs.
 > [!IMPORTANT]
 > dominators can be easily found (meaning loops can be easily found) using the
 > following forward must **dataflow analysis** (initializing `out[n], in[n] :=
-> cfg`):
-> 
+cfg`):
+>
 > <pre><code>
 > ∵   out[n] = set of nodes that dominate n:
 >         in[n]  := ∩<sub>n'∈pred[n]</sub> out[n']  <span class="comment">// intersection of out sets for all predecessors</span>
@@ -70,7 +84,7 @@ _strongly connected_ subsets of graphs.
 > </pre></code>
 
 dominators can be represented as a _dominator tree_, a model that is perhaps
-more readily built/understood by a program.  this tree is built by drawing
+more readily built/understood by a program. this tree is built by drawing
 edges from each node to its _immediate dominator_, that is, the dominator
 (other than the node itself) that is dominated by other dominators (other than
 the node itself):
@@ -214,7 +228,7 @@ similar to loop invariant removal, the loop induction variable optimization
 avoids needlessly recomputating value inside the loop—this time based on loop
 induction variables.
 
-this means that if some instruction inside the loop only relies on the loop induction variable, it's definition can be hoisted to before the loop & based on the induction variable, then the recalculation of it can be simplified to rely on itself instead of the induction variable. often, the loop induction variable can be removed or replaced by this value too. 
+this means that if some instruction inside the loop only relies on the loop induction variable, it's definition can be hoisted to before the loop & based on the induction variable, then the recalculation of it can be simplified to rely on itself instead of the induction variable. often, the loop induction variable can be removed or replaced by this value too.
 
 <pre><code>
 ∵   n := node of instruction of form `%x = opc op<sub>1</sub>, op<sub>2</sub>, ..., op<sub>N</sub>`:

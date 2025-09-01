@@ -1,15 +1,51 @@
-# lexing, finite state machines, & regex
+---
+title: "Compilers notes: lexing, finite state machines, & regex"
+description: "Intruductory lecture notes."
+keywords:
+  - "lexing"
+  - "state machines"
+  - "fsm"
+  - "regular expressions"
+  - "regex"
+  - "pl theory"
+  - "lecture notes"
+  - "computer science"
+  - "cs 443"
+  - "illinois tech"
+meta:
+  byline: Andrew Chang-DeWitt
+  published: "2025-05-29T00:00-06:00"
+---
 
 remember the compiler structure:
 
 ```
-                                           /-(analysis)       /-(optimization)       /-(optimization)
-                                           |  /               |  /                   |  /
-                                           v /                v /                    v /
- source --[lexer]--> tokens --[parser]--> ast --[lowering]--> ir --[code gen]--> target
-|                                            |                                         |
-|                                            |                                         |
-/--------------- front end ------------------/--------------- back end ----------------/
+    -/-- source
+     |     |
+     |     |
+     |  [lexer]
+     |     |
+     |     v
+front|   tokens
+end  |     |
+     |     |
+     |  [parser]
+     |     |
+     |     v
+     |    ast <--(analysis)
+    -/--   |  \______|
+     |     |
+     | [lowering]
+     |     |
+     |     v
+back |    ir <--(optimization)
+end  |     | \______|
+     |     |
+     | [code gen]
+     |     |
+     |     v
+    -/-- target <--(optimization)
+                \______|
 ```
 
 the first step in the front end of a compiler, _lexing_ (or _lexical

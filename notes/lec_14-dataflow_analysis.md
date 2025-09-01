@@ -1,4 +1,20 @@
-# dataflow analysis
+---
+title: "Compilers notes: dataflow analysis"
+description: "Intruductory lecture notes."
+keywords:
+  - "dataflow analysis"
+  - "reaching definitions"
+  - "optimizations"
+  - "compiler construction"
+  - "pl theory"
+  - "lecture notes"
+  - "computer science"
+  - "cs 443"
+  - "illinois tech"
+meta:
+  byline: Andrew Chang-DeWitt
+  published: "2025-07-08T00:00-06:00"
+---
 
 a general framework for analysing control flow graphs by
 
@@ -111,8 +127,8 @@ generalizing this:
 
 ## types of dataflow analyses
 
-|      | backward                                                              | forward                                       |
-| ---- | --------------------------------------------------------------------- | --------------------------------------------- |
+|      | backward                                                                        | forward                                            |
+| ---- | ------------------------------------------------------------------------------- | -------------------------------------------------- |
 | may  | liveness:<br />what variables _may_ be<br />needed from _n_?                    | reaching defs:<br />what defs _may_ reach _n_?     |
 | must | very busy exprs:<br />what exprs _will_ be defined<br />on every path from _n_? | available exprs:<br />what exprs _must_ reach _n_? |
 
@@ -122,7 +138,7 @@ so how to translate the 4-step system to code? as an example here, we
 disect the generalized pattern given in [project 5](../prj_5/), in the file
 `src/dataflow.ml`.
 
-first, how is this module used? looking at `src/opt.ml`, the dataflow module is initialized w/ a 
+first, how is this module used? looking at `src/opt.ml`, the dataflow module is initialized w/ a
 
 ```ocaml
 module ExpDataflow = Dataflow.Make

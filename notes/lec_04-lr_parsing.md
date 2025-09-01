@@ -1,4 +1,20 @@
-# parsing lr(k) grammars
+---
+title: "Compilers notes: parsing lr(k) grammars"
+description: "Intruductory lecture notes."
+keywords:
+  - "parsing"
+  - "fsm"
+  - "shift-reduce parsers"
+  - "cfg"
+  - "pl theory"
+  - "lecture notes"
+  - "computer science"
+  - "cs 443"
+  - "illinois tech"
+meta:
+  byline: Andrew Chang-DeWitt
+  published: "2025-06-04T00:00-06:00"
+---
 
 in comparison to ll(k) grammars, l**r**(k) grammars work by producing the
 **r**ightmost derivation:
@@ -144,17 +160,17 @@ numbers, then create a column for each possible terminal or nonterminal,
 finally filling in the cells for every state that has transitions for that
 terminal/nonterminal.
 
-| state | (  | )  | x  | ,  | $  | S  | L  |
-| ----- | -- | -- | -- | -- | -- | -- | -- |
-| 1     | s4 |    | s3 |    |    | 2  |    |
-| 2     |    |    |    |    | a  |    |    |
-| 3     | r3 | r3 | r3 | r3 | r3 |    |    |
-| 4     | s4 |    | s3 |    |    | 5  | 6  |
-| 5     | r4 | r4 | r4 | r4 | r4 |    |    |
-| 6     |    | s7 |    | s8 |    |    |    |
-| 7     | r2 | r2 | r2 | r2 | r2 |    |    |
-| 8     | s4 |    | s3 |    |    | 9  |    |
-| 9     | r5 | r5 | r5 | r5 | r5 |    |    |
+| state | (   | )   | x   | ,   | $   | S   | L   |
+| ----- | --- | --- | --- | --- | --- | --- | --- |
+| 1     | s4  |     | s3  |     |     | 2   |     |
+| 2     |     |     |     |     | a   |     |     |
+| 3     | r3  | r3  | r3  | r3  | r3  |     |     |
+| 4     | s4  |     | s3  |     |     | 5   | 6   |
+| 5     | r4  | r4  | r4  | r4  | r4  |     |     |
+| 6     |     | s7  |     | s8  |     |     |     |
+| 7     | r2  | r2  | r2  | r2  | r2  |     |     |
+| 8     | s4  |     | s3  |     |     | 9   |     |
+| 9     | r5  | r5  | r5  | r5  | r5  |     |     |
 
 this transition table can then be used to quickly look up what to do for a
 given token while in the current state. we can see it in action by parsing the

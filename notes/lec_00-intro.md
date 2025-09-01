@@ -1,19 +1,17 @@
 ---
-title: "CS 443 lecture notes: intro"
+title: "Compilers notes: intro"
 description: "Intruductory lecture notes."
 keywords:
-  - "notes"
   - "compiler construction"
+  - "pl theory"
   - "lecture notes"
   - "computer science"
   - "cs 443"
   - "illinois tech"
 meta:
   byline: Andrew Chang-DeWitt
-  published: "2025-05-29T00:00-06:00"
+  published: "2025-05-16T00:00-06:00"
 ---
-
-# intro
 
 what is a compiler?
 

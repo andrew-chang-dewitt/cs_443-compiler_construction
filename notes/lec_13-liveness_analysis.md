@@ -1,4 +1,19 @@
-# liveness analysis
+---
+title: "Compilers notes: liveness analysis"
+description: "Intruductory lecture notes."
+keywords:
+  - "liveness"
+  - "dataflow analysis"
+  - "compiler construction"
+  - "pl theory"
+  - "lecture notes"
+  - "computer science"
+  - "cs 443"
+  - "illinois tech"
+meta:
+  byline: Andrew Chang-DeWitt
+  published: "2025-06-04T00:00-07:00"
+---
 
 a variable is _live_ when its value is needed, e.g.:
 
@@ -124,5 +139,5 @@ for every variable v:
       AND mark v as live on each edge traversed
 ```
 
-this works, but is inefficient (time complexity of O(num edges * |use[v]| * num
+this works, but is inefficient (time complexity of O(num edges _ |use[v]| _ num
 of variables) ~= O(n<sup>3</sup>)). how can we make it better?

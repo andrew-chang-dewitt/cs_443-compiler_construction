@@ -1,4 +1,16 @@
-# ocaml crash course
+---
+title: "Compilers notes: ocaml crash course"
+description: "Intruductory lecture notes."
+keywords:
+  - "ocaml"
+  - "lecture notes"
+  - "computer science"
+  - "cs 443"
+  - "illinois tech"
+meta:
+  byline: Andrew Chang-DeWitt
+  published: "2025-05-16T00:00-09:00"
+---
 
 ocaml is a statically typed functional language w/ strong similarities to Haskell (basically just forget about monads). basic syntax includes expressions, declarations, etc. see below for some examples.
 

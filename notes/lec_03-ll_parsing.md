@@ -1,4 +1,20 @@
-# ll parsing
+---
+title: "Compilers notes: ll parsing"
+description: "Intruductory lecture notes."
+keywords:
+  - "parsing"
+  - "fsm"
+  - "context free grammars"
+  - "cfg"
+  - "pl theory"
+  - "lecture notes"
+  - "computer science"
+  - "cs 443"
+  - "illinois tech"
+meta:
+  byline: Andrew Chang-DeWitt
+  published: "2025-06-02T00:00-06:00"
+---
 
 dfas/regex are super powerful for lexing, but not enough for parsing. easy
 example: it's impossible for a DFA or regex to make sure there is exactly one
@@ -50,7 +66,6 @@ e -> e + e
 while these two derivations of `e` are the same in this example, they can
 possibly differ in some grammars/for some inputs. we call each of these the
 _leftmost derivation_ and the _rightmost derivation_.
-
 
 ## parse trees
 
@@ -175,7 +190,6 @@ simple as well. we can see this with a few simple changes.
 
 e.g. adding sequencing of expressions:
 
-
 ```
 e ::= if e then e else e
     | x
@@ -199,7 +213,6 @@ let rec parse_e (l: token list) =
 ```
 
 or adding dangling `if`s:
-
 
 ```
 e ::= if e then e else e
