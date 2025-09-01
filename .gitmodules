@@ -3,7 +3,7 @@
 	url = git@github.com:andrew-chang-dewitt/cs_443-prj_0.git
 [submodule "prj_1"]
 	path = prj_1
-	url = acd:cs_443-prj_1
+	url = git@github.com:andrew-chang-dewitt/cs_443-prj_1
 [submodule "prj_5"]
 	path = prj_5
-	url = acd:cs_443-prj_5.git
+	url = git@github.com:andrew-chang-dewitt/cs_443-prj_5.git
