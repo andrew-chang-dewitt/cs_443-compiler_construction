@@ -1,6 +1,6 @@
 ---
-title: "Compilers notes: optimizations"
-description: "Intruductory lecture notes."
+title: "Compilers: optimizations"
+description: "Begin exploring optimizations via code analysis & transformation. Discusses how to identify loops & opportunities to optimize loops as well as functions."
 keywords:
   - "optimizations"
   - "compiler construction"

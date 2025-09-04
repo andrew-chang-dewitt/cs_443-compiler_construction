@@ -1,6 +1,6 @@
 ---
-title: "Compilers notes: liveness analysis"
-description: "Intruductory lecture notes."
+title: "Compilers: liveness analysis"
+description: "First steps in static analysis of programs via ASTs, using liveness analysis as a working example."
 keywords:
   - "liveness"
   - "dataflow analysis"

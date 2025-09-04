@@ -1,5 +1,5 @@
 ---
-title: "Compilers notes: intro"
+title: "Compilers: intro"
 description: "Intruductory lecture notes."
 keywords:
   - "compiler construction"

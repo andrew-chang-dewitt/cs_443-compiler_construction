@@ -1,6 +1,6 @@
 ---
-title: "Compilers notes: ocaml crash course"
-description: "Intruductory lecture notes."
+title: "Compilers: ocaml crash course"
+description: "A quick overview of programming in ocaml."
 keywords:
   - "ocaml"
   - "lecture notes"

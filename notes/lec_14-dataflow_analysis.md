@@ -1,6 +1,6 @@
 ---
-title: "Compilers notes: dataflow analysis"
-description: "Intruductory lecture notes."
+title: "Compilers: dataflow analysis"
+description: "Exploring how to generalize approach used in liveness analysis from previous lecture to create an abstract dataflow analysis framework."
 keywords:
   - "dataflow analysis"
   - "reaching definitions"

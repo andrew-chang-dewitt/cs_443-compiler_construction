@@ -1,6 +1,6 @@
 ---
-title: "Compilers notes: ll parsing"
-description: "Intruductory lecture notes."
+title: "Compilers: ll parsing"
+description: "Continues lexing with context free grammars instead of determinstic finite automatons. Introduces parsing grammars with **l**eft-to-right reading, **l**eftmost derivation, w/ **k** token lookahead (ll(k)) algorithms."
 keywords:
   - "parsing"
   - "fsm"

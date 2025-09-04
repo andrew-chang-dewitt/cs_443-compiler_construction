@@ -1,6 +1,6 @@
 ---
-title: "Compilers notes: lexing, finite state machines, & regex"
-description: "Intruductory lecture notes."
+title: "Compilers: lexing, finite state machines, & regex"
+description: "Notes on lexing & grammars. Reviews finite state machines & delves into how regular expressions work."
 keywords:
   - "lexing"
   - "state machines"

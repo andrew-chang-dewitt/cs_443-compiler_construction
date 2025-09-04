@@ -1,6 +1,6 @@
 ---
-title: "Compilers notes: parsing lr(k) grammars"
-description: "Intruductory lecture notes."
+title: "Compilers: parsing lr(k) grammars"
+description: "Picks up after ll(k) with lr(k) (**l**eft-to-right reading, **r**ightmost derivation) algorithms & introduces shift-reduce parsers."
 keywords:
   - "parsing"
   - "fsm"
